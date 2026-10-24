@@ -13,7 +13,7 @@ node {
     }
     stage('Deploy DotNet App') {
         dir('dotnet-demo-app/TodoApp') {
-            sh 'docker compose up -d --build'
+            sh 'docker-compose up -d --build'
         }
     }
 }
