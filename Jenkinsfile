@@ -12,6 +12,6 @@ node {
         build 'TestSampleApp'
     }
     stage('Deploy DotNet App') {
-        sh 'docker compose up'
+        sh 'docker-compose up -d'
     }
 }
